@@ -108,3 +108,14 @@ vscode:
     - yzane.markdown-pdf
     - ZainChen.json
     - zhuangtongfa.material-theme
+
+tasks:
+  - init: npm install
+    command: |
+      export HMR_HOST="`gp url 3000`
+      npm run build
+      npm run dev
+
+ports:
+  - port: 3000
+    onOpen: open-browser
