@@ -37,6 +37,7 @@ tasks:
     command: |
       export HMR_HOST="`gp url 3000`
       npm run build
+      npm run watch
 ports:
   - port: 3000
     onOpen: open-browser
